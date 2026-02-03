@@ -18,7 +18,7 @@
               'brand-trim': '#78350f',    // Envinada Brown (Updated from #332700)
               'mex-yellow': '#facc15',
               'mex-red': '#dc2626',
-              'mex-orange': '#ea580c',
+              'mex-orange': '#c2410c',    // Muted Terracotta (Updated from #ea580c)
               'mex-blue': '#0284c7',
               'mex-cream': '#fef3c7',
               'cajeta-dark': '#78350f',
@@ -41,17 +41,28 @@
       body {
         background-color: #f5f5f4;
       }
-      /* Custom scrollbar for that rustic feel */
+      /* Custom scrollbar - Minimalist & Rustic */
       ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
+        width: 8px; /* Thinner for a sleek look */
+        height: 8px;
+        background-color: transparent; /* Ensures the track area is transparent */
       }
+      
+      /* Hide the track background (the white portion) */
       ::-webkit-scrollbar-track {
-        background: #fef3c7;
+        background: transparent;
       }
+      
+      /* The floating orange line */
       ::-webkit-scrollbar-thumb {
-        background: #ea580c;
-        border-radius: 5px;
+        background-color: #c2410c; /* Muted Terracotta */
+        border-radius: 10px;
+        border: 2px solid transparent; /* Creates padding around the thumb */
+        background-clip: content-box; /* Makes the thumb float inside the transparent track */
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #9a3412; /* Darker on hover */
       }
     </style>
   <script type="importmap">

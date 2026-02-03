@@ -117,7 +117,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
             </div>
             <div className="flex items-center gap-4">
               <span className="text-2xl font-bold font-bitter text-brand-primary">${product.price.toFixed(2)}</span>
-              <button className="bg-mex-orange text-white px-6 py-3 rounded-full font-oswald uppercase tracking-wide flex items-center gap-2 hover:bg-orange-700 transition-colors shadow-lg hover:shadow-xl active:scale-95 transform">
+              <button className="bg-mex-orange text-white px-6 py-3 rounded-full font-oswald uppercase tracking-wide flex items-center gap-2 hover:bg-[#9a3412] transition-colors shadow-lg hover:shadow-xl active:scale-95 transform">
                 <ShoppingBag size={18} /> Add to Cart
               </button>
             </div>
